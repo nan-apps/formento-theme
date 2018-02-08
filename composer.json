@@ -1,13 +1,13 @@
 {
-    "name": "cnvs/paper-dark",
-    "description": "Canvas Dark Theme",
-    "keywords": ["canvas", "theme", "dark"],
+    "name": "nan-apps/formento-theme",
+    "description": "Formento Theme",
+    "keywords": ["canvas", "theme"],
     "type": "canvas-theme",
     "license": "MIT",
     "authors": [
         {
-            "name": "Patrick Reid",
-            "email": "reliq@reliqarts.com"
+            "name": "Gaston Nan",
+            "email": "gaston@nan-apps.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "extra": {
         "canvas-theme": {
-            "title": "Paper Dark",
+            "title": "Formento",
             "directories": {
                 "public": "public",
                 "views": "resources/views"
