@@ -13,7 +13,7 @@
         <p class="postSubtitle">
             {{ str_limit($post->subtitle, config('blog.frontend_trim_width')) }}
         </p>
-        <p style="font-size: 13px"><a href="{{ $post->url($tag) }}">READ MORE...</a></p>
+        <p style="font-size: 13px"><a href="{{ $post->url($tag) }}">Seguir leyendo...</a></p>
     </div>
     <hr>
 @endforeach
