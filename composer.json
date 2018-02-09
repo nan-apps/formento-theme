@@ -10,8 +10,14 @@
             "email": "gaston@nan-apps.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nan-apps/easel"
+        }
+    ],
     "require": {
-        "cnvs/easel": "*"
+        "nan-apps/easel": "dev-formento"
     },
     "extra": {
         "canvas-theme": {
