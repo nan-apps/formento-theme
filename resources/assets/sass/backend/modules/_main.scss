@@ -71,7 +71,7 @@ header#header {
 }
 
 .sidebar {
-    background-color: lighten($dark-header, 5%);
+    background-color: $brand-white;
 
     .main-menu {
         a {

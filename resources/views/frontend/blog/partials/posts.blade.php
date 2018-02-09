@@ -1,19 +1,18 @@
-@foreach ($posts as $post)
-    <div class="post-preview">
-        <h2 class="post-title">
-            <a href="{{ $post->url($tag) }}">{{ $post->title }}</a>
-        </h2>
-        <p class="post-meta">
-            {{ $post->published_at->diffForHumans() }} &#183; {{ $post->readingTime() }} MIN READ
-            <br>
-            @unless( $post->tags->isEmpty())
-                {!! implode(' ', $post->tagLinks()) !!}
-            @endunless
-        </p>
-        <p class="postSubtitle">
-            {{ str_limit($post->subtitle, config('blog.frontend_trim_width')) }}
-        </p>
-        <p style="font-size: 13px"><a href="{{ $post->url($tag) }}">Seguir leyendo...</a></p>
-    </div>
+@foreach ($posts as $i => $post)
+    @if ($i == 0)
+
+        <div class="row" >
+            <div class="col-lg-8" >
+                @include('canvas::frontend.blog.partials.post-preview')
+            </div>
+            <div class="col-lg-4" >
+                <img src="{{ asset($post->page_image) }}" class="img-thumbnail img-responsive">
+            </div>
+            
+        </div>
+
+    @else
+        @include('canvas::frontend.blog.partials.post-preview')
+    @endif
     <hr>
 @endforeach
