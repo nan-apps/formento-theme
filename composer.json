@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "nan-apps/easel": "dev-formento"
+        "nan-apps/easel": "dev-formento-easel"
     },
     "extra": {
         "canvas-theme": {
