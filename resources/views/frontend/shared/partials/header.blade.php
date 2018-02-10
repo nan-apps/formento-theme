@@ -15,6 +15,9 @@
             @if(!empty($socialHeaderIconsUser->linkedin))
                 <a href="http://linkedin.com/in/{{ $socialHeaderIconsUser->linkedin }}" target="_blank" id="social"><i class="fa fa-fw fa-linkedin text-muted" style="font-size: 14px"></i></a>
             @endif
+            @if(!empty($socialHeaderIconsUser->url))
+                <a href="{{ $socialHeaderIconsUser->url }}" target="_blank" id="url"><i class="fa fa-fw fa-globe text-muted" style="font-size: 14px"></i></a>
+            @endif
         </div>
     </div>
 </div>

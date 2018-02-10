@@ -6,7 +6,17 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <hr>
-                <p class="small">Proudly powered by <a href="https://cnvs.io" target="_blank">Canvas</a> &#183; <a href="{!! route('canvas.admin') !!}"><i class="fa fa-lock"></i> Sign In</a>
+                <p class="small">
+                    {{trans('messages.powered_by')}} 
+                    <a href="https://cnvs.io" target="_blank">Canvas</a>
+                    
+                    <br/>
+                    
+                    {{trans('messages.customized_by')}} 
+                    <a href="http://nan-apps.com" target="_blank">Nan-Apps</a> &#183; 
+                    <a href="https://github.com/nan-apps/formento-blog">
+                        <i class="fa fa-github"></i> {{trans('messages.code')}}
+                    </a>
                 </p>
             </div>
         </div>

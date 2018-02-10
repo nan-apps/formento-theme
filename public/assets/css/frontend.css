@@ -7813,7 +7813,7 @@ ul.pager > li > a {
 }
 
 .post-page-title {
-  color: #e7e7e7;
+  color: #525252;
   font-size: 30px;
   font-weight: 500;
   margin-top: 34px;
@@ -8097,7 +8097,7 @@ code, code[class*=language-] {
 }
 
 #top-link-block #scroll-to-top {
-  background-color: white !important;
+  background-color: #0072C6 !important;
   border-radius: 2em;
   font-size: 14px !important;
   color: #fff;
