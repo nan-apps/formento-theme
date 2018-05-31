@@ -5,6 +5,7 @@
 @section('og-description', $post->meta_description)
 @section('twitter-description', $post->meta_description)
 @section('title', \Canvas\Models\Settings::blogTitle().' | '.$post->title)
+@section('og-url', Request::url())
 @if ($post->page_image)
     @section('og-image', url( $post->page_image ))
     @section('twitter-image', url( $post->page_image ))

@@ -25,7 +25,12 @@
 
 <!-- scroll to top button -->
 <span id="top-link-block" class="hidden hover-button">
-    <a id="scroll-to-top" href="#top">SCROLL TO TOP</a>
+    <a id="scroll-to-top" href="#top">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
 </span>
 
 @if (!empty(\Canvas\Models\Settings::gaId()))
