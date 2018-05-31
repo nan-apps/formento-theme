@@ -12,6 +12,13 @@
 @endif
 
 @section('content')
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            @include('canvas::frontend.blog.partials.tags', ['returnToIndex' => true])
+        </div>
+    </div>
+
     <article>
         <div class="container" id="post">
             <div class="row">

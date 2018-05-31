@@ -1,5 +1,5 @@
 @foreach ($posts as $i => $post)
-    @if ($i == 0)
+    
 
         <div class="row" >
             <div class="col-lg-8" >
@@ -41,9 +41,7 @@
                 </p>
             </div>
         </div>
+        
 
-    @else
-        @include('canvas::frontend.blog.partials.post-preview')
-    @endif
     <hr>
 @endforeach
